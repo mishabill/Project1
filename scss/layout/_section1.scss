@@ -1,0 +1,26 @@
+.section1 {
+    width: 792px;
+    height: 690px;
+    // background-color: aqua;
+    margin: 100px auto;
+    position: relative;
+    z-index: 10;
+    h1{
+        color: #ffffff;
+        text-align: center;
+        height: 91px;
+        font-size: 80px;
+        font-family: 'Madimi One', sans-serif;
+        font-weight: 400;
+    }
+    &_img {
+        margin: 36px auto;
+    }
+    &_text {
+        height: 63px;
+        font-family: "Kode Mono", monospace;
+        text-align: center;
+        font-size: 24px;
+        padding: 19px 0;
+    }
+}
