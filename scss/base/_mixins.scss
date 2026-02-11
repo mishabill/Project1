@@ -1,0 +1,35 @@
+//fonts mix        
+@mixin font_title {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Madimi One', sans-serif;
+    font-weight: 400;
+}
+
+@mixin font_p {
+    text-align: start;
+    font-size: 24px;
+    font-family: Helvetica Neue, sans-serif;
+}
+
+@mixin font_kode{
+    font-family: "Kode Mono", monospace;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+//flex mix
+
+@mixin flex_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,21 +1,32 @@
+@use "../base/index";
+
 .section1 {
-    width: 792px;
+    max-width: 792px;
     height: auto;
-    margin: 100px auto;
+    margin: 8% auto 0 auto; //100px
     // position: relative;
     // z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include index.flex_column;
     gap: 36px;
 
+    &_img {
+        width: 100%;
+        height: 100%;
+        &_pr {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+        }
+    }
     h1{
         color: #ffffff;
-        text-align: center;
+        @include index.font_title;
         height: 91px;
-        font-size: 80px;
-        font-family: 'Madimi One', sans-serif;
-        font-weight: 400;
+        // text-align: center;
+        // height: 91px;
+        // font-size: 80px;
+        // font-family: 'Madimi One', sans-serif;
+        // font-weight: 400;
     }
     &_text {
         height: 63px;
@@ -36,10 +47,4 @@
     }
 
 }
-// .buttonLog{
-//         width: 378px;
-//         height: 64.28px;
-//         border-radius: 59px;
 
-//         border: 4px solid #FE5738;
-//     }
