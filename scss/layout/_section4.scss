@@ -1,0 +1,30 @@
+@use "../base/index";
+.section4 {
+    margin: index.$marginSection auto;
+    width: min(100%, 1920px);
+    //max-width: 100%;
+    max-height: auto;
+    border: 1px solid green;
+    background-image: url('../../images/section4/crazy\ lines.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &_title {
+        @include index.font_title;
+    }
+    &_content {
+        @include index.flex(center, center);
+    }
+    &_text { 
+        @include index.font_kode;
+        &_1 {
+            font-weight: 500;
+            line-height: 80px
+        }
+    }
+}
+
+.section4_img {
+    @include index.img_cover;
+}

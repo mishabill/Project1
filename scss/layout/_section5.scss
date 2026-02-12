@@ -1,0 +1,35 @@
+@use "../base/index";
+.section5 {
+    margin: index.$marginSection auto;
+    max-width: index.$sectionWidth;
+    max-height: auto;
+    border: 1px solid green;
+
+    &_title {
+        @include index.font_title;
+    }
+    &_content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row: auto;
+        gap: index.$gap_m;
+        
+        &_3 {
+            grid-column: 3 / 5;
+            margin-bottom: index.$gap_m;
+        }
+        &_5 {
+            grid-column: 2 / 4;
+            margin-bottom: index.$gap_m;
+        }
+        &_7 {
+            grid-column: 1 / 3;
+        }
+    }
+    
+
+}
+
+.section5_img {
+    @include index.img_cover;
+}

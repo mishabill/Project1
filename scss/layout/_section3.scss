@@ -1,0 +1,35 @@
+@use "../base/index";
+@use "../components/index_comp";
+
+.section3 {
+    margin: index.$marginSection auto;
+    max-width: index.$sectionWidth;
+    max-height: 1645px;
+    border: 1px solid green;
+    &_title {
+        @include index.font_title;
+    }
+    &_content {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: index.$gap_m;
+        //margin-bottom: index.$marginTitle;
+
+        &_item2 {
+            @include index.font_p;
+            @include index.flex(center, center);
+            padding-bottom: index.$marginTitle;
+        }
+    }
+}
+
+.section3_img {
+    @include index.img_cover;
+    padding-bottom: index.$marginTitle;
+}
+.section3_button {
+    @include index_comp.button_login;
+    margin: 32px auto 0 auto;
+    @include index.flex(center, center);
+}
