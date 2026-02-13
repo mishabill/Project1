@@ -1,0 +1,40 @@
+@use "../base/index";
+.section7 {
+    margin: index.$marginSection auto;
+    max-width: index.$sectionWidth;
+    max-height: auto;
+    @include index.flex_column;
+
+    &_title {
+        @include index.font_title;
+    }
+    &_content {
+        display: flex;
+        flex-direction: column;
+        width: 83%;
+        gap: index.$gap_m;
+        &_item1 {
+            height: 109px;
+            border: 8px solid #024555;
+            border-radius: 20px;
+            background-color: #D4E9E9;
+            @include index.flex(start, center);
+            gap: 24px;
+            padding: index.$gap_s index.$gap_m;
+    
+        }
+        &_item2 {
+            height: 109px;
+            border: 8px solid #FE5738;
+            border-radius: 20px;
+            background-color: #FEA9BD;
+            @include index.flex(start, center);
+            gap: 24px;
+            padding: index.$gap_s index.$gap_m;
+    
+        }
+        &_text {
+            @include index.font_p;
+        }
+    }
+}

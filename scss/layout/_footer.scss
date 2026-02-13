@@ -1,0 +1,41 @@
+@use "../base/index";
+@use "../components/index_comp";
+.footer {
+    width: min(100%, 1920px);
+    height: 576px;
+    margin: 0 auto;
+    padding-top: 108px;
+    background: linear-gradient(to bottom, rgba(255, 29, 78, 0.35) 0%, rgba(254, 87, 56, 100) 100%);
+    @include index.font_p;
+    &_content {
+        max-width: index.$sectionWidth;
+        margin: 0 auto;
+        @include index.flex(space-between, start);
+    }
+    &_pBold {
+        font-weight: 600;
+        color: index.$font_white;
+        margin-bottom: 8px;
+    }
+    &_p {
+        color: index.$font_white;
+    }
+    &_social {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+    &_icon {
+        max-width: 100%;
+        height: auto;
+        
+            &_img {
+                @include index.img_cover;
+            }
+        
+    }
+}
+#footer_tel {
+    margin-top: 52px;
+} 
