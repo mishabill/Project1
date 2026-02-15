@@ -104,7 +104,6 @@ body {
   width: 100%;
   height: auto;
   background-image: url("images/header/header1.png");
-  background-image: url("../../images/header/header1.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% 55%;
@@ -408,7 +407,6 @@ body {
   max-height: auto;
   border: 1px solid green;
   background-image: url("images/section4/crazylines.png");
-  background-image: url("../../images/section4/crazylines.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
