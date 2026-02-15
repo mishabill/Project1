@@ -3,7 +3,6 @@
     margin: index.$marginSection auto;
     max-width: index.$sectionWidth;
     max-height: auto;
-    border: 1px solid green;
 
     &_title {
         @include index.font_title;

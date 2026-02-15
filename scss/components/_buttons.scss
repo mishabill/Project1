@@ -1,7 +1,9 @@
 @mixin button_login {
     width: 23vw;
+    max-width: 378px;
     min-width: 235px;
     height: 8vh;
+    max-height: 63px;
     min-height: 40px;
     border-radius: 59px;
     border: 4px solid #FE5738;
