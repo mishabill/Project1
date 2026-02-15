@@ -11,24 +11,25 @@
     &_nav{
         // width: 1353px;
         margin: 0 auto;
-        width: 88%;
+        width: min(88%, 1920px);
         height: 59px;
-        @include index.flex(space-between, center);
+        @include index.flex(space-around, center);
         background-color: #FFB8D6;
         border-radius: 32px;
-        padding: 0 75px;
-        // position: relative;
-        // z-index: 10;
+        //padding: 0 75px;
         a{
             font-weight: 500;
         }
 
 }
+    &_menu {
+
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    &_menu_icon {
+        display: none;
+    }
 }
 
-
-// .header_bg {
-//     position: absolute;
-//     top: -20px;
-//     z-index: 1;
-// }
