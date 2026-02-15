@@ -8,18 +8,28 @@
     height: 102px;
     margin-bottom: root.$marginTitle;
     color: #000000;
+    @media (max-width: 393px) {
+            font-size: 40px;
+        }
+
 }
 
 @mixin font_p {
     text-align: start;
     font-size: 24px;
     font-family: Helvetica Neue, sans-serif;
+        @media (max-width: 393px) {
+            font-size: 16px;
+        }
 }
 
 @mixin font_kode{
     font-family: "Kode Mono", monospace;
     text-align: center;
     font-size: 24px;
+        @media (max-width: 393px) {
+            font-size: 16px;
+        }
 }
 
 

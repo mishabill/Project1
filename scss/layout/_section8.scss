@@ -12,6 +12,10 @@
         display: flex;
         align-items: stretch;
         gap: index.$gap_m;
+        @media (max-width: 393px) {
+            flex-direction: column;
+            padding: 0 16px;
+        }
     }
     &_form {
         max-width: 481px;
@@ -23,6 +27,7 @@
         padding-left: 50px;
         @include index.font_p;
         margin-bottom: 34px;
+
         }
     }
     &_button {
@@ -35,5 +40,13 @@
 }
 
 .section8_map {
-    width: 686px;
+    max-width: 100%;
+}
+
+.section8_form {
+    @media (max-width: 393px) {
+    @include index.flex_column;
+    align-items: center;
+    justify-content: center;
+        }
 }

@@ -1,7 +1,8 @@
 @mixin button_login {
-    width: min(378px, 38vw);
-    //width: 378px;
-    height: 64.28px;
+    width: 23vw;
+    min-width: 235px;
+    height: 8vh;
+    min-height: 40px;
     border-radius: 59px;
     border: 4px solid #FE5738;
     font-family: Helvetica Neue;
@@ -9,4 +10,10 @@
     font-weight: bold;
     box-shadow: 0 0 13px #FF0059;
     cursor: pointer;
+            @media (max-width: 393px) {
+            font-size: 16px;
+        }
+    @media (max-width: 393px) {
+        height: 40px;
+    }
 }

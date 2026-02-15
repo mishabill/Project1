@@ -4,9 +4,14 @@
     width: 100%;
     height: auto;
     background-image: url("images/header/header1.png");
+    background-image: url("../../images/header/header1.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100% 55%; //497px;
+    @media (max-width: 393px) {
+        background-size: 200% 50%;
+    }
+
 
     &_nav{
         // width: 1353px;
@@ -16,6 +21,11 @@
         @include index.flex(space-around, center);
         background-color: #FFB8D6;
         border-radius: 32px;
+        @media (max-width: 393px) {
+            @include index.flex(space-between, center);
+            flex-direction: row-reverse;;
+            padding: 0 19px;
+        }
         //padding: 0 75px;
         a{
             font-weight: 500;
@@ -27,9 +37,15 @@
         display: flex;
         justify-content: space-between;
         width: 80%;
+        @media (max-width: 393px) {
+            display: none;
+        }
     }
     &_menu_icon {
         display: none;
+                @media (max-width: 393px) {
+            display: block;
+        }
     }
 }
 

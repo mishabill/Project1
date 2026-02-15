@@ -2,20 +2,32 @@
 @use "../components/index_comp";
 .footer {
     width: min(100%, 1920px);
-    height: 576px;
+    height: auto;
     margin: 0 auto;
-    padding-top: 108px;
+    padding: 108px 0 220px 0;
     background: linear-gradient(to bottom, rgba(255, 29, 78, 0.35) 0%, rgba(254, 87, 56, 100) 100%);
     @include index.font_p;
+    @media (max-width: 393px) {
+        padding: 108px 0 108px 0;
+    }
     &_content {
         max-width: index.$sectionWidth;
         margin: 0 auto;
         @include index.flex(space-between, start);
+        @media (max-width: 393px) {
+            @include index.flex_column;
+            text-align: center;
+            gap: 30px;
+            
+        }
     }
     &_pBold {
         font-weight: 600;
         color: index.$font_white;
-        margin-bottom: 8px;
+        margin-bottom: 28px;
+        @media (max-width: 393px) {
+            margin-bottom: 18px;
+        }
     }
     &_p {
         color: index.$font_white;
@@ -24,11 +36,18 @@
         display: flex;
         align-items: center;
         gap: 20px;
+                @media (max-width: 393px) {
+            @include index.flex_column;
+            justify-content: center;
+        }
 
     }
     &_icon {
         max-width: 100%;
         height: auto;
+        @media (max-width: 393px) {
+            max-width: 50%;
+        }
         
             &_img {
                 @include index.img_cover;
@@ -38,4 +57,7 @@
 }
 #footer_tel {
     margin-top: 52px;
+    @media (max-width: 393px) {
+        margin-top: 25px;
+    }
 } 

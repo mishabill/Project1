@@ -5,10 +5,12 @@
     //max-width: 100%;
     max-height: auto;
     border: 1px solid green;
+    background-image: url('images/section4/crazylines.png');
     background-image: url('../../images/section4/crazylines.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    overflow: hidden;
 
     &_title {
         @include index.font_title;
@@ -27,4 +29,9 @@
 
 .section4_img {
     @include index.img_cover;
+        @media (max-width: 393px) {
+            max-width: 180%;
+            object-fit: contain;
+            
+        }
 }

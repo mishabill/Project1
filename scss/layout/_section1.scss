@@ -32,9 +32,7 @@
     }
     &_text {
         height: 63px;
-        font-family: "Kode Mono", monospace;
-        text-align: center;
-        font-size: 24px;
+        @include index.font_kode;
         padding: 19px 0;
     }
     &_buttonLog {

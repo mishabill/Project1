@@ -13,6 +13,10 @@
         grid-template-columns: repeat(4, 1fr);
         grid-row: auto;
         gap: index.$gap_m;
+        @media (max-width: 393px) {
+            @include index.flex_column;
+            padding: 0 16px;
+        }
         
         &_3 {
             grid-column: 3 / 5;
@@ -29,7 +33,18 @@
     
 
 }
+.section5_imgBox {
+    @media (max-width: 393px) {
+    width: 100%;
+    height: auto;
+    }
+}
 
 .section5_img {
     @include index.img_cover;
+    @media (max-width: 393px) {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
 }
