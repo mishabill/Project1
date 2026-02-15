@@ -172,12 +172,12 @@ body {
   }
 }
 
-.Section2 {
+.section2 {
   max-width: 1200px;
   max-height: auto;
   margin: min(14%, 216px) auto;
 }
-.Section2_title {
+.section2_title {
   color: #000000;
   text-align: center;
   font-size: 80px;
@@ -188,11 +188,11 @@ body {
   color: #000000;
 }
 @media (max-width: 393px) {
-  .Section2_title {
+  .section2_title {
     font-size: 40px;
   }
 }
-.Section2_block1 {
+.section2_block1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +200,7 @@ body {
   max-width: 100%;
 }
 @media (max-width: 393px) {
-  .Section2_block1 {
+  .section2_block1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -208,19 +208,19 @@ body {
     padding: 0 16px;
   }
 }
-.Section2_block1_item1 {
+.section2_block1_item1 {
   max-width: 584px;
   max-height: 564px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }
-.Section2_block1_item1 img {
+.section2_block1_item1 img {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.Section2_block1_item2 {
+.section2_block1_item2 {
   max-width: 584px;
   -ms-flex-negative: 3;
       flex-shrink: 3;
@@ -238,7 +238,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.Section2_block1_item2_text {
+.section2_block1_item2_text {
   width: 100%;
   height: 100%;
   text-align: start;
@@ -246,11 +246,11 @@ body {
   font-family: Helvetica Neue, sans-serif;
 }
 @media (max-width: 393px) {
-  .Section2_block1_item2_text {
+  .section2_block1_item2_text {
     font-size: 16px;
   }
 }
-.Section2_block1_item2_text {
+.section2_block1_item2_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,7 +266,7 @@ body {
   gap: 20px;
 }
 
-.Section2_block1_item2_icons {
+.section2_block1_item2_icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,14 +276,14 @@ body {
   max-height: 147px;
   margin-top: 20px;
 }
-.Section2_block1_item2_icons img {
+.section2_block1_item2_icons img {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 @media (max-width: 393px) {
-  .Section2_block1_item2_icons img {
+  .section2_block1_item2_icons img {
     max-width: 90%;
     max-height: 90%;
   }

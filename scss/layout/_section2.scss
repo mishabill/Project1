@@ -1,6 +1,6 @@
 @use "../base/index";
 
-.Section2 {
+.section2 {
     max-width: index.$sectionWidth;
     max-height: auto;//730px;
     margin: index.$marginSection auto;
@@ -46,7 +46,7 @@
 
     }
 }
-.Section2_block1_item2_icons {
+.section2_block1_item2_icons {
     display: flex;
     justify-content: space-between;
     max-height: 147px;
