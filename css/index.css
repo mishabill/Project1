@@ -105,7 +105,7 @@ body {
   padding-top: 20px;
   width: 100%;
   height: auto;
-  background-image: url("/header1.png");
+  background-image: url("../../images/header/header1.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% 55%;
@@ -408,7 +408,7 @@ body {
   margin: min(14%, 216px) auto;
   width: min(100%, 1920px);
   max-height: auto;
-  background-image: url("/section4bg.png");
+  background-image: url("../../images/section4/crazylines.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
